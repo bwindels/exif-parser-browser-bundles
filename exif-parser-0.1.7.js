@@ -915,7 +915,6 @@ module.exports = {
 },{}],8:[function(require,module,exports){
 /*jslint browser: true, devel: true, bitwise: false, debug: true, eqeq: false, es5: true, evil: false, forin: false, newcap: false, nomen: true, plusplus: true, regexp: false, unparam: false, sloppy: true, stupid: false, sub: false, todo: true, vars: true, white: true */
 
-var assert = require('assert');
 var jpeg = require('./jpeg'),
 	exif = require('./exif'),
 	simplify = require('./simplify');
@@ -1052,7 +1051,7 @@ Parser.prototype = {
 				}
 			};
 		}
-		
+
 		jpeg.parseSections(stream, function(sectionType, sectionStream) {
 			var validExifHeaders, sectionOffset = sectionStream.offsetFrom(start);
 			if(sectionType === 0xE1) {
@@ -1116,7 +1115,7 @@ Parser.prototype = {
 
 
 module.exports = Parser;
-},{"./exif":6,"./exif-tags":5,"./jpeg":7,"./simplify":9,"assert":undefined}],9:[function(require,module,exports){
+},{"./exif":6,"./exif-tags":5,"./jpeg":7,"./simplify":9}],9:[function(require,module,exports){
 var exif = require('./exif');
 
 var degreeTags = [{
